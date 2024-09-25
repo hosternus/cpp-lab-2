@@ -28,9 +28,6 @@ long double t(long double x) {
 
     for (int i = 0; i <= 10; i++) {
         sum1 += (pow(x, ((2 * i) + 1))) / (double_factorial((2 * i) + 1));
-    }
-
-    for (int i = 0; i <= 10; i++) {
         sum2 += (pow(x, (2 * i))) / (double_factorial(2 * i));
     }
 
