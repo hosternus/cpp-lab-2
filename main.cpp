@@ -3,6 +3,7 @@
 using namespace std;
 
 
+
 int64_t double_factorial(int64_t y) {
     if (y <= 0) {
         return 1;
@@ -44,7 +45,6 @@ int main(void) {
     cin >> y;
 
     res = ((7 * t(0.25)) + (2 * t(1 + y))) / (6 - (t(pow(y, 2) - 1)));
-
 
     cout << res << endl;
 
