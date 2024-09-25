@@ -25,11 +25,11 @@ int64_t double_factorial(int64_t y) {
 
 
 long double t(long double x) {
-    long double sum1, sum2 = 0;
+    long double sum1 = 0, sum2 = 0;
 
-    for (int i = 0; i <= 10; i++) {
-        sum1 += (pow(x, ((2 * i) + 1))) / (double_factorial((2 * i) + 1));
-        sum2 += (pow(x, (2 * i))) / (double_factorial(2 * i));
+    for (int i = 0; i <= 20; i += 2) {
+        sum1 += (pow(x, (i + 1))) / (double_factorial(i + 1));
+        sum2 += (pow(x, i)) / (double_factorial(i));
     }
 
     return (sum1 / sum2);
