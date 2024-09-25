@@ -36,6 +36,7 @@ long double t(long double x) {
 }
 
 
+
 int main(void) {
 
     long double y, res;
